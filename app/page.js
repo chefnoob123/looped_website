@@ -1,12 +1,13 @@
-import Image from "next/image";
+import RandomNav from "@/components/randomnav.js";
+import ShootingStar from "@/components/shooting_star";
 
 export default function Home() {
   return (
-    <div className="">
-      <h1>You seem lost among the stars...</h1>
-    
-    <a href="C.html">Try a different star</a>
-    <a href="D.html">Seek elsewhere</a>
+    <div className="page">
+      <ShootingStar/>
+      <h1>The stars do not begin, they simply are.</h1>
+      <p className="hint">A beginningless story whispers its name.</p>
+      <RandomNav currentPath="/" />
     </div>
   );
 }
