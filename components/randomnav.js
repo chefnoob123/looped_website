@@ -1,19 +1,14 @@
-import Link from 'next/link';
 import { getRandomLinks } from '../utils/randomLinks';
+import Door from './Door';
 
-export default function RandomNav({ currentPath }) {
+export default function RandomNav({ currentPath,className }) {
   const links = getRandomLinks(currentPath);
-  const labels = [
-    'Venture into another spiral',
-    'Gaze into a silent star',
-    'Search the curved path'
-  ];
 
   return (
-    <nav>
-      {links.map((href, i) => (
-        <Link key={href} href={href}>{labels[i]}</Link>
+    <div className={className}>
+      {links.map((href) => (
+        <Door key={href} href={href} />
       ))}
-    </nav>
+    </div>
   );
 }
