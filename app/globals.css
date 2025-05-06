@@ -25,6 +25,10 @@ body {
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
   min-height: 100vh;
   height: 100%;
   width: 100%;
@@ -210,6 +214,7 @@ nav a:hover {
   border-radius: 0.5rem;
   border: none;
   font-size: 1rem;
+  width: 50px;
 }
 .chemical{
   font-size: 30px;
@@ -411,5 +416,4 @@ h1 {
   font-style: italic;
   color: #aaa;
 }
-
 
