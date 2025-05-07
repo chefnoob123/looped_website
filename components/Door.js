@@ -21,6 +21,10 @@ export default function Door({ href, no }) {
       setUnlocked(true);
       redirect('/timeless')
     }
+    else if(input === "ygtblnt"){
+      setUnlocked(true);
+      redirect('/ygtblnt')      
+    }
   };
 
   return (

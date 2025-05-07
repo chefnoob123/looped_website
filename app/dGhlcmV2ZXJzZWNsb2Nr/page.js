@@ -10,7 +10,7 @@ export default function PageB() {
 
       </div>
        <video width="600" height="600" controls preload="none" >
-      <source src="/clue.webm" type="video/webm" />
+      <source src="/clue_fixed.webm" type="video/webm" />
       Your browser does not support the video tag.
     </video>
     </div>
